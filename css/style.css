@@ -1,0 +1,253 @@
+/*Default Setting for the Website*/
+* {
+    padding: 0px;
+    margin: 0px;
+    color:white
+}
+body{
+    background-color: black;
+    height: 100%;
+}
+/*----------------Navbar--------------*/
+nav{
+    text-align: center;
+    background-color: chartreuse;
+    height: 8%vh;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    /*Specifies the postion of when the navbar stops*/
+}
+.Navbar li{
+    color: white;
+    display: inline-block;
+    /*Makes the list horizontal*/
+    padding:10px;
+    margin-left: 50px
+}
+a{
+    color: rgb(36, 28, 28);
+}
+/*------------Hero Image-----------*/
+.hero-image {
+    background-image: url("../img/Apples\(Cropped\).jpg");
+    /*one dot = same folder
+     two dots = next folder up
+     two dots + slash = next folder up*/
+    background-color: grey;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    position: center;
+}
+.hero-text{
+    text-align: center;
+    padding-top: 100px;
+}
+.hero-text h1{
+    font-size: 50px;
+    text-shadow: 8px 8px 8px black;
+}
+.hero-text h2{
+    font-size: 40px;
+    text-shadow: 8px 8px 8px black;
+}
+
+.hero-image2 {
+    background-image: url("../img/Lazy\ Foods\ Logo.JPG");
+    /*one dot = same folder
+     two dots = next folder up
+     two dots + slash = next folder up*/
+    background-color: grey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    position: center;
+}
+/*------------Index Sections/Recipes----------*/
+.Content-Wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+.Intro{
+    /* margin: 50px; */
+    padding: 50px;
+    height: fit-content;
+}
+.Intro h3{
+    font-size: 40px;
+}
+
+.Stir-Fry{
+    margin: 40px;
+    padding: 10px;
+    height: 35vh;
+}
+.Stir-Fry h3{
+    font-size: 30px;
+}
+.Stir-Fry p{
+    font-size: 20px;
+    width: 40vw;
+}
+.Stir-Fry figure{
+    background-image: url("../img/Fried\ Rice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35vh;
+    height: 100%;
+    float:right;
+}
+/*min-height vs max-height = gives parameters to the image no matter display size*/
+
+.Brfst-Brto{
+    margin: 40px;
+    padding: 10px;
+}
+.Brfst-Brto h3{
+    font-size: 30px;
+}
+.Brfst-Brto p{
+    font-size: 20px;
+}
+.Brfst-Brto figure{
+    background-image: url("../img/Breakfast\ Burrito.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    height: 150px;
+    float:left;
+}
+
+.Hamburger{
+    margin: 40px;
+    padding: 10px;
+}
+.Hamburger h3{
+    font-size: 30px;
+}
+.Hamburger p{
+    font-size: 20px;
+}
+
+.Hamburger figure{
+    background-image: url("../img/Giant\ Burger.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    height: 150px;
+    float:right
+}
+/*------------About Page----------*/
+.About-Lazy-Foods{
+    margin: 20px;
+    padding: 10px;
+}
+.About-Lazy-Foods h3{
+    text-align: center;
+    font-size: 30px;
+}
+.About-Lazy-Foods p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.About-the-Author {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .Card-Position {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .About-the-Author:hover .Card-Position {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .Card-Front, .Card-Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .Card-Front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .Card-Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/*-------------Contact Page--------*/
+.Where-to-find{
+    padding-top: 45px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+/*-------------Footer-------------*/
+footer{
+    text-align: center;
+    background-color: chartreuse;
+    height: 100px;
+    width: 100%vh;
+}
+
+.copyright li{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+.contact li{
+    display:inline-block;
+}
+.fa{
+    padding: 5px;  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 3px;  
+    width: 12px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px black;
+}
+.fa-facebook{
+    background: #3B5998;  
+    color: white; 
+}
+.fa-twitter{  
+    background: #55ACEE;  
+    color: white;  
+}
+.fa-instagram{  
+    background: #125688;  
+    color: white;  
+}  
+.fa-youtube {  
+    background: #bb0000;  
+    color: white;
+}
