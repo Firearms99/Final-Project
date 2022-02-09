@@ -8,7 +8,7 @@ body{
     background-color: black;
     height: 100%;
 }
-/*----------------Navbar--------------*/
+/*-----------------------------------Navbar----------------------------------*/
 nav{
     text-align: center;
     background-color: chartreuse;
@@ -18,9 +18,12 @@ nav{
     top: 0px;
     /*Specifies the postion of when the navbar stops*/
 }
+.Navbar li, figure{
+    display:inline-block;
+}
 .Navbar li{
     color: white;
-    display: inline-block;
+    /* display: inline-block; */
     /*Makes the list horizontal*/
     padding:10px;
     margin-left: 50px
@@ -28,7 +31,16 @@ nav{
 a{
     color: rgb(36, 28, 28);
 }
-/*------------Hero Image-----------*/
+.Navbar figure{
+    background-image: url("../img/Lazy\ Foods\ Logo.JPG");
+    background-color: grey;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 5%;
+    width: 8vw;
+}
+/*-----------------------------------Hero Image------------------------------*/
 .hero-image {
     background-image: url("../img/Apples\(Cropped\).jpg");
     /*one dot = same folder
@@ -38,13 +50,13 @@ a{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
+    height: 50vh;
     width: 100%;
     position: center;
 }
 .hero-text{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 7%;
 }
 .hero-text h1{
     font-size: 50px;
@@ -68,7 +80,7 @@ a{
     width: 100%;
     position: center;
 }
-/*------------Index Sections/Recipes----------*/
+/*---------------------------Index Section/Recipes---------------------------*/
 .Content-Wrapper{
     width: 80vw;
     margin: 0 auto;
@@ -108,32 +120,40 @@ a{
 .Brfst-Brto{
     margin: 40px;
     padding: 10px;
+    height: 35vh;
 }
 .Brfst-Brto h3{
     font-size: 30px;
+    float: right;
+    margin-right: 22.2vw;
 }
 .Brfst-Brto p{
     font-size: 20px;
+    width: 40vw;
+    float: right
 }
 .Brfst-Brto figure{
     background-image: url("../img/Breakfast\ Burrito.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 25%;
-    height: 150px;
+    background-color: grey;
+    width: 35vh;
+    height: 100%;
     float:left;
 }
 
 .Hamburger{
     margin: 40px;
     padding: 10px;
+    height: 35vh;
 }
 .Hamburger h3{
     font-size: 30px;
 }
 .Hamburger p{
     font-size: 20px;
+    width: 40vw;
 }
 
 .Hamburger figure{
@@ -141,11 +161,11 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 25%;
-    height: 150px;
+    width: 35vh;
+    height: 100%;
     float:right
 }
-/*------------About Page----------*/
+/*-----------------------------------About Page------------------------------*/
 .About-Lazy-Foods{
     margin: 20px;
     padding: 10px;
@@ -203,14 +223,14 @@ a{
     color: white;
     transform: rotateY(180deg);
   }
-/*-------------Contact Page--------*/
+/*---------------------------------Contact Page------------------------------*/
 .Where-to-find{
     padding-top: 45px;
     padding-bottom: 5px;
     margin: 10px;
 }
 
-/*-------------Footer-------------*/
+/*-----------------------------------Footer----------------------------------*/
 footer{
     text-align: center;
     background-color: chartreuse;
