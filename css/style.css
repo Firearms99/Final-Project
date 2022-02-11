@@ -2,7 +2,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    color:white
+    color: rgba(255, 255, 255, 0.88)
 }
 body{
     background-color: black;
@@ -12,7 +12,7 @@ body{
 nav{
     text-align: center;
     background-color: chartreuse;
-    height: 8%vh;
+    height: 8%;
     width: 100%;
     position: sticky;
     top: 0px;
@@ -34,11 +34,13 @@ a{
 .Navbar figure{
     background-image: url("../img/Lazy\ Foods\ Logo.JPG");
     background-color: grey;
-    background-size: 100%;
+    background-size: 200%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 5%;
+    height: 15px;
     width: 8vw;
+    padding: 2px;
+    margin: 1px;
 }
 /*-----------------------------------Hero Image------------------------------*/
 .hero-image {
