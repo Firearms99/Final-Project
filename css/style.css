@@ -16,6 +16,7 @@ nav{
     width: 100%;
     position: sticky;
     top: 0px;
+    z-index: 2;
     /*Specifies the postion of when the navbar stops*/
 }
 .Navbar li, figure{
@@ -191,8 +192,10 @@ a{
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin: 0 auto;
+    position: relative;
+    z-index: 0;
   }
-  
+
   /* This container is needed to position the front and back side */
   .Card-Position {
     position: relative;
@@ -206,6 +209,7 @@ a{
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .About-the-Author-Image:hover .Card-Position {
     transform: rotateY(180deg);
+    
   }
   
   /* Position the front and back side */
